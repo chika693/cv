@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<!-- INSTRUCTIONS ON HOW TO PUBLISH WEBSITE BELOW-->
+<head>
+	<meta charset="utf-8">
+	<title> 😎 Chika's Personal Site</title>
+</head>
+<body>
+	<!-- you can actually go on google or facebook and other social media and right click on the inmage, and then copy the image address.
+
+		now for say that we don't want to rely on the internet to be able to display our photo:
+
+		instead we can actually use an image that is within our directory. we can have an image photo in an image folder and allow it to get directed to the folder everytime the website wants to call and load that image-->
+	<!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMskcZWFJ1WZ10qLnZk4PVeUpY15ilqjAB2FI2bOPD01zONXpe" alt="Chika profile picture"> -->
+	<!-- <em></em> is better than <i></i> and <strong></strong> is better than <b></b>, the formers tell the browser that whatever is inside said tags are important.-->
+
+	<!--<h1>Chika Otisi</h1>
+	<p><em>Founder and CTO of <strong><a href="#">YouSolution</a></strong></em></p>
+	<p>I am an IOS and web developer I love coffee and working out and make my own things.</p> -->
+
+	<!-- the hr tag (<hr>) is not only self closing like the line break tag (<br>) it also has attributes that you can put on it, the two that we spoke of in the video are known as size and no shade..
+		size: dictates the thickness
+
+		noshade: dictates the color almost
+
+
+	-->
+
+	<!-- now we are going to use a tables to structure our profile picture and the information that was under it to give it a nice look.
+	-->
+
+	<!-- table induced heading -->
+	<table cellspacing="20">
+		<tr>
+			<td>
+				<!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMskcZWFJ1WZ10qLnZk4PVeUpY15ilqjAB2FI2bOPD01zONXpe" alt="Chika profile picture">-->
+				<img src="img/chika.jpeg">
+			</td>
+			<td>
+				<h1>Chika Otisi</h1>
+				<p><em>Founder and CTO of <strong><a href="#">YouSolution</a></strong></em></p>
+				p>I am an IOS and web developer I love coffee and working out and make my own things.</p>
+			</td>
+		</tr>
+	</table>
+	<div>
+	<a href="hobbies.html">My Hobbies</a>
+	</div>
+	<br>
+	<div>
+	<a href="contact.html">Contact Me</a>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Horizontal Rule -->
+	<hr size="3" noshade>
+	<h3>Education</h3>
+	<ul>
+		<li>P.s 499 - was here as a kid after transferring in from the elementary school called ps. 225</li>
+		<li>Jamaica Hs - went here during my teen years and learned alot about life but not enough although i am truly grateful</li>
+		<li>SUNY Canton - came here straight out of high school, in plain sight itmay have not been something that was a good choice finaicially but that isn't really something that i am worried about.</li>
+		<li>Brooklyn College - i am here in school now learning things that i am interested in.</li>
+	</ul>
+	<!--<h3>Work Experience</h3> 
+	<p>2010-2013 Lead Developer at Chika Otisi Digital</p>
+	<p>Researcher at The Institute of Cognitive Neurosciences</p> -->
+<!-- if you notice that when we look at this h3 of "Work Experience" we can see that it loos very ugly and for this purpose we want the data to look really nice... but we aren't using css yet. so what we can do while still just using html is making use of the table tag (<table></table>)
+
+
+look below for what it should look like.
+-->
+<hr size="3" noshade="">
+<h3>Work Experience</h3>
+
+	<!-- tables also have heads, bodies, and footers as an html layout would have.. you can signify these by using:
+
+		thead: <thead> </thead>
+
+				-inside the table head we can add some titles to each of our columns and they get formated in by default in bold
+
+		tbody: <tbody> </tbody>
+
+		tfoot: <tfoot> </tfoot>
+
+	looks for the difference below
+
+-->
+
+	<table cellspacing="10">
+		<thead>
+			<tr>
+				<th>Dates</th>
+				<th>Work</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					2010-2013
+				</td>
+				<td>
+					Lead Developer at Chika Otisi Digital
+				</td>
+			</tr>
+			<tr>
+				<td>
+					2010
+				</td>
+				<td>
+					Researcher at Institute of Cognitive Neurosciences
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			
+		</tfoot>
+	</table>
+<hr size="3" noshade>
+<br>
+	<h3>Skills</h3>
+		<table cellspacing="10">
+			<tr>
+				<td>HTML 5</td>
+				<td>⭐⭐⭐⭐</td>
+			</tr>
+			<tr>
+				<td>CSS 3</td>
+				<td>⭐⭐⭐⭐</td>
+			</tr>
+			<tr>
+				<td>Java Script</td>
+				<td>⭐</td>
+			</tr>
+			<tr>
+				<td>Nodes</td>
+				<td>⭐</td>
+			</tr>
+		</table>
+			
+
+
+	
+
+	<!-- now the table element also has some attributes that you can use to style it without the need for css. these include...:
+		border
+		background
+		bgcolor
+		colspan
+		cellspacing
+		etc... check out mzd for more attributes
+
+		but we don't have to use it.. matter of fact it is not recommended that we use this. because remember HTML is for struction, CSS is for styling and Java Script is for behavior.-->
+
+	<a href="hobbies.html">My Hobbies</a> <br>
+	<a href="contact.html">Contact Me</a> <br>
+
+
+<!-- NOW WE ARE GOING TO LEARN HOW TO PUBLISH OUR WEBSITE... SEE THERE IS NO POINT IN IT JUST BEING LOCAL BECAUSE THEN NO ONE ELSE WILL BE ABLE TO ACCESS IT.. SO LETS PUBLISH IT- Below you will find the instructions to do so. 
+
+
+	in order for us to be able to publish a website we will need to host our website somewhere. now there are a whole bunch on hosting sites such as:
+	- GoDaddy 
+	- Bluehost
+
+	but because we are learning at the moment we don't want to have to pay for this so there is also a free solution. by the end of this comment we are going to have our personal CV 
+		(what is a CV? :Curriculum Vitae
+CV is an abbreviation for Curriculum Vitae. If a job advertisement asks for a CV, that's a hint that the employer expects a great deal of life experience and accomplishments, including education, original research, presentations you've given and papers or books you've had published.) 
+- up on the internet proudly displayed somehwere, and you will be able to share a url or a link to it so that anybody across the web can be able to access it. 
+
+		BUT 
+		first things first, we are going to have to do a little bit of set up.
+
+		the service that we are going to use is GitHub. 
+		-github.com
+		-create an account *if you don't have one already*
+		-create a repository (cloud folder)
+		-name the repository "cv"
+		-press "upload files" button and upload our files for our cv website
+		-select index.html, css, images, hobbies.html, contact.html and drag it into the upload space
+
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Me</title>
+</head>
+<body>
+	<h1>My Contact Details</h1>
+	<p>My Fictional Address</p>
+	<p>8343453323</p>
+	<p>myemail@gmail.com</p>
+<hr>
+
+<!-- even without the use of javascript we can still give this form some functionality... notice that if we gave the "action" attribute a value of lets say "index.html".. whenever the user presses submit, then they will be taken back to the home page. 
+
+	now lets say instead we actually change the value of the "action" attribute from "index.html" to "mailto:"
+
+		-what "mailto:"'s do is that when you press the submit button it will send the information that you sent to the email that you specify after the ":" for example:
+
+			action="mailto:chikaotisi@gmail.com" --- all of the information on the form will be submitted to the mail address specified (chikaotisi@gmail.com)
+
+	when it comes to the "method" attribute... the value of "post" means that we are going to transfer what the user types into these input fields, into the email client. that will look like this:
+
+		<form action="mailto:chikaotisi@gmail.com" method="post">
+		</form>
+
+			- what this does whe you see it is that when you press submit it will indeed bring up a new mailing messge from your default mail on mac or pc, and this will have the information that you put into it, just waiting on you to press the send button. But if you look closely you will notice that the data in the mailing paper/doc does not make sense and that is because we need to add another attribute into the form tag to make it work properly.
+			this attribute is called: enctype (encryption type) and we will give that a value of "text/plain" - you can kind of think of it just like the meta tag at the top of the page in the head section that tells the browser that our website is encoded in utf-8, we are also saying that the date in our form is incoded in plain text (text/plain), so that way when it lauches the mail app, you won't have these funny percentages and numbers you will just have plain text.
+		-->
+	<form action="mailto:chikaotisi@gmail.com" method="post" enctype="text/plain">
+		<div>
+		<label>Your Name: </label><br>
+		<input type="text" name="yourName" placeholder="Name">
+		</div>
+		<br>
+<!-- 1. we can also add color pickers in forms... we do this by placing the regural <input type="" name=""> and for the value of the type attribute we put color... so that will look like this:
+
+	<input type="color" name="color">      this will give users the option to choose a color or what color they want to submit the form with. -->
+		<!--<div>
+			<label>Color Picker: </label><br>
+			<input type="color" name="color">
+		</div>
+		<br>-->
+
+<!-- 2. another type value that we can use is called checkbox, and its the same as before, only difference is that instead of type="color" we say type="checkbox" that will look like this:-->
+		<!--<div>
+			<label>Do you want to sign up to the email list?</label><br>
+			<input type="checkbox" name="yes-no-maybe-so"checked>yes <br>
+			<input type="checkbox" name="yes-no-maybe-so">no <br>
+			<input type="checkbox" name="yes-no-maybe-so">maybe <br>
+			<input type="checkbox" name="yes-no-maybe-so">so <br>
+		</div>
+		<br> -->
+
+
+<!-- 3. next there is another input for passords... lets look at that now; it will look like this: it will look like: <input type="password" name="password">. we will know that this is a password field cause we can either right click on the password box (field) and we can click inspect to see that it is a password field and you can also tell because anything that you type into the password field is maked by default, this is for areas and information that you don't want somebody overlooking the user to be able to see what their password is.it will look like this:-->
+		
+		<!--<div>
+			<label>Passowrd: </label><br>
+			<input type="yourpassword" name="password">
+		</div>-->
+		<br>
+		<div>
+		<label>Your Email: </label><br>
+		<input type="email" name="yourEmail" placeholder="Email">
+		</div>
+		<br>
+		<div>
+<!-- 4. for the case of textareas, we know that they are used for messaging, but now let's also look at the attributes that are important to the textare.. these attributes are "rows" (rows="" *determines how tall your text area should be*) and cols (cols=""*determins how wide your textare should be*) -->
+		<label>Your Message: </label><br>
+		<textarea name="yourMessage" rows="10" cols="30" placeholder="Message"></textarea>
+		</div>
+		<br>
+		<input type="submit" name="submit">
+		<!-- or -->
+		<!--<button name="submit">Submit</button>-->
+
+<!-- 5. the "name" attribute is necessary because now it gives us a way to classify the submited data...for example if we were to submit this form then we would know what is what because the name would be the lable as to which to identify the data...that is right, your label tags and the input tags don't get carried over when the data is submitted.. it is actually the "name='yourName'" that gets carried over when the data is submitted.. this is awesome. -->
+
+<!-- 6. for both the form tag and the input tag there are many different attributes that you can give it. don't ever forget to check the mzd developer site to see everything that is available.-->
+	</form>
+
+	<a href="index.html">Home Page</a> <br>
+	<a href="hobbies.html">My Hobbies</a><br>
+</body>
+</html>
