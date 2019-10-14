@@ -1,0 +1,38 @@
+/*REMEMBER everything on the webpage is just a whole bunch of boxes
+and with this line of thinking you should be able to change the:
+		-height
+		-width
+*/
+
+/*ANOTHER BEST PRACTICE is to have all of your selector rules in 
+alphabetical order, so that if you ever needed to debug, it would
+be easier to go through and find the problem.*/
+
+		body{
+			background-color: #e4f9f5;
+		}
+
+
+		h1{
+			color:#66bfbf;
+		}
+
+
+		h3{
+			color:#66bfbf;
+		}
+
+/* off rip html elements on the page have some sort of default styling to it, as is the case for the <hr> tag, by default it has a boder-style of "inset" and it has a background color of aswell... the inset style has also by dfault has a height of 1px set on it, now as we set the border-style to none (removing the inset stlye) - (we also remove the height that it has) so basically without adding a height property the border would seemingly disappear from the screen.. but if we check our pesticide google chrome extension (this is a css too that marks out the css on the page) we can still see that the <hr> is still on the page.. what it is missing is the height property, so when we add a height property with the value of 2px then we are able to see the line, especially with whatever background color that we specified.*/
+		hr{
+			/*border-style:dotted none none none;*/
+			/* or*/
+			border-style:none;
+			border-top-style:dotted;
+			border-color:grey;
+			border-width:5px;
+			width: 5%;
+			
+		}
+
+
+
